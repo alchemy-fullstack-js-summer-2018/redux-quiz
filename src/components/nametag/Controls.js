@@ -8,16 +8,20 @@ class Controls extends Component {
   static propTypes = {
     changeGreeting: PropTypes.func.isRequired,
     changeName: PropTypes.func.isRequired,
-    greeting: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired
+    greeting: PropTypes.string,
+    name: PropTypes.string
   };
 
   render() { 
     const { changeGreeting, changeName, greeting, name } = this.props;
     return (
       <div>
-        <input name="greeting" value={greeting} onChange={() => changeGreeting()}/>
-        <input name="name" value={name} onChange={() => changeName()}/>
+        <p>
+          Greeting: <input name="greeting" value={greeting} onChange={() => changeGreeting()}/>
+        </p>
+        <p>
+          Name: <input name="name" value={name} onChange={() => changeName()}/>
+        </p>
       </div>
     );
   }

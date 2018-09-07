@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Controls from './nametag/Controls';
+// import Display from './nametag/Display';
 
 class App extends Component {
 
@@ -6,7 +8,8 @@ class App extends Component {
 
     return (
       <div>
-        
+        <Controls/>
+        {/* <Display/> */}
       </div>
     );
   }
