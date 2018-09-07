@@ -6,9 +6,15 @@ class Controls extends Component {
   render() {
 
     return (
-      <section>
+      <form>
         controls Component
-      </section>
+        <label>
+          Greeting: <input type="text" name="greeting" value="greeting"></input>
+        </label>
+        <label>
+          Name: <input type="text" name="name" value="name"></input>
+        </label>
+      </form>
     );
   }
 }
