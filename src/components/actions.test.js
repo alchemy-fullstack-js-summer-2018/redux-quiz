@@ -1,5 +1,5 @@
-import { GREETING_CHANGE } from './reducers';
-import { changeGreeting } from './actions';
+import { GREETING_CHANGE, NAME_CHANGE } from './reducers';
+import { changeGreeting, changeName } from './actions';
 
 describe('action creators', () => {
 
@@ -8,5 +8,12 @@ describe('action creators', () => {
     const { type, payload } = changeGreeting(greeting);
     expect(type).toBe(GREETING_CHANGE);
     expect(payload).toBe(greeting);  
+  });
+
+  it('creates an actions that changes the name', () => {
+    const name = 'Mariah';
+    const { type, payload } = changeName(name);
+    expect(type).toBe(NAME_CHANGE);
+    expect(payload).toBe(name);  
   });
 });
