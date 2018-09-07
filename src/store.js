@@ -1,7 +1,16 @@
-import { createStore } from 'redux';
+import { createStore, combineReducers, compose } from 'redux';
+import { greeting, name } from './components/reducers';
+
+const combined = combineReducers({
+  greeting,
+  name
+});
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const store = createStore(
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  combined,
+  composeEnhancers()
 );
 
 export default store;
