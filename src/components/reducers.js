@@ -1,0 +1,1 @@
+export const NAMETAG_CREATE = 'NAMETAG_CREATE';
