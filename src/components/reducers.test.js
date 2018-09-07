@@ -22,7 +22,7 @@ describe('reducers', () => {
       payload: 'Greetings'
     });
     expect(state).toEqual('Greetings');
-  })
+  });
 
   it('changes name', () => {
     const state = name('Robyn', {
