@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getGreeting, getName } from './reducers';
 
 class Display extends Component {
 
   static propTypes = { 
-    greeting: PropTypes.func,
-    name: PropTypes.func
+    greeting: PropTypes.string,
+    name: PropTypes.string,
+    getGreeting: PropTypes.func.isRequired,
   };
 
   render() { 

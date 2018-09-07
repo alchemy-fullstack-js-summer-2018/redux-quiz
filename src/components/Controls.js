@@ -12,8 +12,8 @@ class Controls extends Component {
   };
 
   static propTypes = {
-    greeting: PropTypes.func,
-    name: PropTypes.func,
+    greeting: PropTypes.string,
+    name: PropTypes.string,
     greetingUpdate: PropTypes.func.isRequired,
     nameUpdate: PropTypes.func.isRequired
   };
@@ -34,11 +34,11 @@ class Controls extends Component {
       <form onSubmit={this.handleSubmit}>
         <label>
           Greeting:
-          <input name="greeting" value={greeting}></input>
+          <input name="greeting" value={greeting} onChange={this.handleChange}></input>
         </label>
         <label>
           Name:
-          <input name="name" value={name}></input>
+          <input name="name" value={name} onChange={this.handleChange}></input>
         </label>
         <button>Submit</button>
       </form>
