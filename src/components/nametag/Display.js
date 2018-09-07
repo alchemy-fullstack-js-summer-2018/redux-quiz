@@ -20,6 +20,8 @@ class Display extends Component {
 }
  
 export default connect(
-  null,
-  null
+  state => ({
+    name: state,
+    greeting: state
+  })
 )(Display);
