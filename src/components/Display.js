@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { add, update } from './actions';
@@ -12,10 +12,13 @@ class  Display extends Component {
     const { nametag, onEdit } = this.props;
     
     return ( 
-      <p>
-        {nametag.name} the {nametag.greeting}
+      <Fragment>
+        <h2> {nametag.greeting} </h2>
+        <h1>
+          {nametag.name} 
+        </h1>
         <button name="edit" onClick={onEdit}>Update Nametag</button>
-      </p>
+      </Fragment>
     );
   }
 }
