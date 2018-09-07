@@ -1,10 +1,10 @@
-export const GREETING_LOAD = 'GREETING_LOAD';
 export const GREETING_ADD = 'GREETING_ADD';
-export const NAME_LOAD = 'NAME_LOAD';
 export const NAME_ADD = 'NAME_ADD';
 
-export function greeting(state = 'hello', { type }) {
+export function greeting(state = 'hello', { type, payload }) {
   switch(type) {
+    case GREETING_ADD:
+      return payload;
     default:
       return state;
   }
