@@ -12,6 +12,7 @@
     text-align: center;
     border: 2px solid red;
     height: 200px;
+    width: 320px;
   }
 
   #greeting {
@@ -26,7 +27,6 @@
 
   label {
     display: block;
-    
   }
 
   .controls {
