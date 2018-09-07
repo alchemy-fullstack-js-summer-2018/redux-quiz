@@ -19,8 +19,9 @@ class Controls extends PureComponent {
 
   handleChange = ({ target }) => {
     const { name, value } = target;
-    if(name === 'greeting') this.props.greetingChange(value);
-    if(name === 'name') this.props.nameChange(value);
+    const { greetingChange, nameChange } = this.props;
+    if(name === 'greeting') greetingChange(value);
+    if(name === 'name') nameChange(value);
   };
 
 
