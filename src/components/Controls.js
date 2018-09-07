@@ -18,7 +18,7 @@ class Controls extends PureComponent {
 
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
+        <form>
           <label>
             Name:&nbsp;
             <input name="name" value={name} onChange={changeGreeting}></input>

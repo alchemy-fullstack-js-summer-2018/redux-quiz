@@ -13,9 +13,11 @@ class Display extends PureComponent {
 
 
   render() {
+    const { greeting, name } = this.props;
     return (
       <div>
-        Hello display
+        <p>{greeting}</p>
+        <p>{name}!</p>
       </div>
     );
   }
