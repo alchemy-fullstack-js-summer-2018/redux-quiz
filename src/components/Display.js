@@ -14,8 +14,9 @@ class Display extends PureComponent {
     const { greeting, name } = this.props;
 
     return (
-      <section>
-        {greeting} {name}
+      <section className="nametag">
+        <h1 id="greeting">{greeting}</h1>
+        <h1 id="name">{name}</h1>
       </section>
     );
   }
