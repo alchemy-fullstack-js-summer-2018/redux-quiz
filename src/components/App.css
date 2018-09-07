@@ -23,4 +23,13 @@
     grid-area: name;
     margin-bottom: 30px;
   }
+
+  label {
+    display: block;
+    
+  }
+
+  .controls {
+    margin: 20px;
+  }
 }

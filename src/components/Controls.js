@@ -28,9 +28,15 @@ class Controls extends PureComponent {
     const { greeting, name } = this.props;
 
     return (
-      <section>
-        <input name="greeting" onChange={this.handleChange} value={greeting}/>
-        <input name="name" onChange={this.handleChange} value={name}/>
+      <section className="controls">
+        <label>
+          Greeting:
+          <input name="greeting" onChange={this.handleChange} value={greeting}/>
+        </label>
+        <label>
+          Name:
+          <input name="name" onChange={this.handleChange} value={name}/>
+        </label>
       </section>
     );
   }
