@@ -10,8 +10,10 @@ export function greeting(state = 'hello', { type, payload }) {
   }
 }
 
-export function name(state = '', { type }) {
+export function name(state = '', { type, payload }) {
   switch(type) {
+    case NAME_CHANGE:
+      return payload;
     default:
       return state;
   }

@@ -1,4 +1,4 @@
-import { greeting, name, GREETING_ADD, NAME_CHANGE } from './reducers';
+import { greeting, name, GREETING_CHANGE, NAME_CHANGE } from './reducers';
 
 describe('Greeting reducers', () => {
   it('initializes to hello', () => {
@@ -10,7 +10,7 @@ describe('Greeting reducers', () => {
     const newGreeting = 'howdy';
 
     const state = greeting('', {
-      type: GREETING_ADD,
+      type: GREETING_CHANGE,
       payload: newGreeting
     });
 
@@ -31,7 +31,7 @@ describe('Name reducers', () => {
       type: NAME_CHANGE,
       payload: newName
     });
-    
+
     expect(state).toBe('Woody');
   });
 });
