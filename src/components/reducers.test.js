@@ -1,4 +1,4 @@
-import { DISPLAY_LOAD, DISPLAY_ADD, DISPLAY_UPDATE } from './reducers';
+// import { DISPLAY_LOAD, DISPLAY_ADD, DISPLAY_UPDATE } from './reducers';
 
 describe('Display reducers', () => {
 
