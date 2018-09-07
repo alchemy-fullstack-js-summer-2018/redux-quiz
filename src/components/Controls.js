@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { greetingUpdate, nameUpdate } from './actions';
-import { getGreeting, getName } from './reducers';
 
 class Controls extends Component {
 
@@ -24,7 +23,9 @@ class Controls extends Component {
 
   handleSubmit = event => {
     event.preveDefault();
-
+    const { greeting, name } = this.state;
+    greetingUpdate(greeting);
+    nameUpdate(name);
   }
 
   render() { 
@@ -47,9 +48,6 @@ class Controls extends Component {
 }
  
 export default connect(
-  state => ({
-    greeting: getGreeting(state),
-    name: getName(state)
-  }),
+  null,
   { greetingUpdate, nameUpdate }
 )(Controls);

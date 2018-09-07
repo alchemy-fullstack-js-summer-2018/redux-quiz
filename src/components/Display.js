@@ -6,9 +6,10 @@ import { getGreeting, getName } from './reducers';
 class Display extends Component {
 
   static propTypes = { 
-    greeting: PropTypes.string,
-    name: PropTypes.string,
+    greeting: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
     getGreeting: PropTypes.func.isRequired,
+    getName: PropTypes.func.isRequired
   };
 
   render() { 
