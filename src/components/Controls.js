@@ -5,10 +5,6 @@ import { getName, getGreeting } from './reducers';
 import { greetingChange, nameChange } from './actions';
 
 class Controls extends PureComponent {
-  state = {
-    greeting: '',
-    name: ''
-  };
 
   static propTypes = {
     greeting: PropTypes.string.isRequired,
