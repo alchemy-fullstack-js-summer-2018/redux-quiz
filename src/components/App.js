@@ -5,7 +5,7 @@ class App extends Component {
   render() {
 
     return (
-      <div>Hello Redux Quiz!</div>
+      <div>Hello Redux Quiz!!</div>
     );
   }
 }
