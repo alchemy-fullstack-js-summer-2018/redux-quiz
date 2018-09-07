@@ -1,4 +1,4 @@
-import { greeting, GREETING_CHANGE } from './reducers';
+import { greeting, GREETING_CHANGE, name } from './reducers';
 
 describe('reducers', () => {
 
@@ -14,5 +14,10 @@ describe('reducers', () => {
       payload: data
     });
     expect(state).toBe(data);
+  });
+
+  it('defaults to empty string', () => {
+    const state = name('', {});
+    expect(state).toBe('');
   });
 });

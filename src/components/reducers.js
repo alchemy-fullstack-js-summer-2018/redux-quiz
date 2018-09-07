@@ -9,3 +9,10 @@ export function greeting(state = 'Hello', { type, payload }) {
       return state;
   }
 }
+
+export function name(state = '', { type }) {
+  switch(type) {
+    default: 
+      return state;
+  }
+}
