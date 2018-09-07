@@ -2,6 +2,9 @@
 export const GREETING_CHANGE = 'GREETING_CHANGE';
 export const NAME_CHANGE = 'NAME_CHANGE';
 
+export const getGreeting = state => state.greeting;
+export const getName = state => state.name;
+
 export function greeting(state = 'Hello', { type, payload }) {
   switch(type) {
     case GREETING_CHANGE:
