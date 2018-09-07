@@ -8,7 +8,7 @@ import {
 describe('greeting reducer', () => {
   it('initializes greeting to Hello', () => {
     const state = greeting(undefined, {});
-    expect(state).toEqual('Hello');
+    expect(state).toBe('Hello');
   });
 
   it('changes greeting', () => {
@@ -17,7 +17,7 @@ describe('greeting reducer', () => {
       type: GREETING_CHANGE,
       payload
     });
-    expect(state).toEqual('Hi');
+    expect(state).toBe('Hi');
   });
 });
 
@@ -25,7 +25,7 @@ describe('greeting reducer', () => {
 describe('name reducer', () => {
   it('initializes name to Hello', () => {
     const state = name(undefined, {});
-    expect(state).toEqual('');
+    expect(state).toBe('');
   });
 
   it('changes name', () => {
@@ -34,6 +34,6 @@ describe('name reducer', () => {
       type: NAME_CHANGE,
       payload
     });
-    expect(state).toEqual('Mister');
+    expect(state).toBe('Mister');
   });
 });
