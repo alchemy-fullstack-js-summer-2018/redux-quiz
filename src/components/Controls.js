@@ -39,7 +39,6 @@ class Nametag extends Component {
 
   render() {
     const { name, greeting, key } = this.state;
-    const { onCancel } = this.props;
 
     return (
       <form onSubmit={this.handleSubmit}>

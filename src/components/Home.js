@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Controls from './Controls';
 import Display from './Display';
 
-class App extends Component {
+class Home extends Component {
 
   render() {
 
     return (
       <Router>
-        
+        <h2>nametag</h2>
+        <Display/>
       </Router>
     );
   }
