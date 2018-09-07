@@ -1,5 +1,5 @@
 import { createStore } from 'redux';
-import { greeting, name } from './components/controls/reducers';
+import { greeting, name } from './components/nametag/reducers';
 
 const store = createStore(
   greeting,
