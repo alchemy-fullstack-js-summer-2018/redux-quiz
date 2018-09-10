@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Home from './Home';
+import Display from './Display';
 
-class App extends Component {
+class Home extends Component {
 
   render() {
 
     return (
       <Router>
-        <Home/>
+        <h2>nametag</h2>
+        <Display/>
       </Router>
     );
   }
 }
 
-export default App;
+export default Home;
